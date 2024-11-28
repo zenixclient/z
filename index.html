@@ -6,15 +6,19 @@
   <meta name="description" content="Zenix — Превосходство в мире Minecraft. Доминируй с лучшим клиентом.">
   <title>Zenix Client</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div id="loader" class="loader">
+  <div id="loader">
     <div class="loader-animation"></div>
     <p>Загрузка Zenix...</p>
   </div>
 
   <!-- Header -->
   <header class="header">
+    <canvas id="background-canvas"></canvas>
     <div class="header-content">
       <h1 class="title">Zenix Client</h1>
       <p class="subtitle">Лидерство в каждом блоке Minecraft.</p>
@@ -26,17 +30,17 @@
   <section id="features" class="features">
     <h2>Преимущества Zenix</h2>
     <div class="features-grid">
-      <div class="feature-item">
+      <div class="feature-item" data-effect="zoom-in">
         <img src="assets/pvp-icon.svg" alt="PvP" class="icon">
         <h3>Совершенный PvP</h3>
         <p>Искусственный интеллект, который гарантирует доминирование в битвах.</p>
       </div>
-      <div class="feature-item">
+      <div class="feature-item" data-effect="zoom-in">
         <img src="assets/movement-icon.svg" alt="Movement" class="icon">
         <h3>Динамичное движение</h3>
         <p>Преодолевай препятствия с легкостью: Fly, Speed и многое другое.</p>
       </div>
-      <div class="feature-item">
+      <div class="feature-item" data-effect="zoom-in">
         <img src="assets/utility-icon.svg" alt="Utility" class="icon">
         <h3>Полезные инструменты</h3>
         <p>XRay, Baritone, и поддержка автопостроек.</p>
@@ -55,7 +59,5 @@
   <footer>
     <p>© 2024 Zenix. Создано для настоящих лидеров.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
