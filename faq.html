@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenix - FAQ</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Навигация -->
+  <header class="navbar">
+    <div class="logo">Zenix</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="features.html">Особенности</a></li>
+      <li><a href="download.html">Скачать</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <button class="btn-hamburger" id="hamburger-btn">☰</button>
+  </header>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <h2>Часто задаваемые вопросы</h2>
+    <div class="faq-item">
+      <h3>Совместим ли Zenix с последними версиями Minecraft?</h3>
+      <p>Да, Zenix регулярно обновляется для поддержки последних версий Minecraft.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Как установить Zenix?</h3>
+      <p>Просто скачайте установщик, следуйте инструкциям и наслаждайтесь!</p>
+    </div>
+    <div class="faq-item">
+      <h3>Как связаться с поддержкой?</h3>
+      <p>Вы можете написать нам на email: zenixclient@gmail.com</p>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 Zenix. Все права защищены.</p>
+      <ul class="footer-links">
+        <li><a href="features.html">Особенности</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="download.html">Скачать</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript для открытия и закрытия меню при клике на гамбургер
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
