@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenix - Скачать</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Навигация -->
+  <header class="navbar">
+    <div class="logo">Zenix</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="features.html">Особенности</a></li>
+      <li><a href="download.html">Скачать</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <button class="btn-hamburger" id="hamburger-btn">☰</button>
+  </header>
+
+  <!-- Секция загрузки -->
+  <section class="download">
+    <div class="download-content">
+      <h2>Скачайте Zenix уже сегодня</h2>
+      <p>Попробуйте самый мощный Minecraft чит совершенно бесплатно и без регистрации.</p>
+      <button class="btn-download">Скачать Zenix</button>
+      <p class="note">* Совместим с последними версиями Minecraft.</p>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 Zenix. Все права защищены.</p>
+      <ul class="footer-links">
+        <li><a href="features.html">Особенности</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="download.html">Скачать</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript для открытия и закрытия меню при клике на гамбургер
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
