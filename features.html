@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zenix - Особенности</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Навигация -->
+  <header class="navbar">
+    <div class="logo">Zenix</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Главная</a></li>
+      <li><a href="features.html">Особенности</a></li>
+      <li><a href="download.html">Скачать</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+    </ul>
+    <button class="btn-hamburger" id="hamburger-btn">☰</button>
+  </header>
+
+  <!-- Секция особенностей -->
+  <section class="features">
+    <h2>Почему выбирают Zenix?</h2>
+    <div class="features-container">
+      <div class="feature-card">
+        <i class="fas fa-crosshairs"></i>
+        <h3>Умный Aimbot</h3>
+        <p>Идеальная точность в любых условиях.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-tools"></i>
+        <h3>Быстрая настройка</h3>
+        <p>Настраивайте чит под свои потребности за секунды.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Высокая безопасность</h3>
+        <p>Защита вашего аккаунта от большинства античитов.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer>
+    <div class="footer-content">
+      <p>© 2024 Zenix. Все права защищены.</p>
+      <ul class="footer-links">
+        <li><a href="features.html">Особенности</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="download.html">Скачать</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // JavaScript для открытия и закрытия меню при клике на гамбургер
+    const hamburgerBtn = document.getElementById('hamburger-btn');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburgerBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
